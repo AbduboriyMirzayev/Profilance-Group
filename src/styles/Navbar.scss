@@ -1,0 +1,29 @@
+.header {
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: -0.06rem -0.06rem 1.25rem #ccc;
+
+  &__wrapper,
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__wrapper {
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 12.5rem;
+  }
+
+  &__list-item {
+    margin: 0 0.5rem;
+  }
+  &__button {
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+  }
+}

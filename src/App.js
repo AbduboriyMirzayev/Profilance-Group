@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "components/Navbar";
+import Page404 from "pages/404";
+import { Route, Routes } from "react-router-dom";
+import routes from "routes";
+import "styles/global.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      <div className="app__components-wrapper">
+        <div className="container">
+          <Routes>
+            {routes.map((route) => (
+              <Route
+                key={route.title}
+                path={route.path}
+                element={route.component}
+              />
+            ))}
+            <Route path="*" element={<Page404 />} />
+          </Routes>
+        </div>
+      </div>
     </div>
   );
 }
