@@ -11,8 +11,10 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
-export default function () {
+function configureStore() {
   let store = createStore(persistedReducer, applyMiddleware(logger));
   let persistor = persistStore(store);
   return { store, persistor };
 }
+
+export default configureStore;
