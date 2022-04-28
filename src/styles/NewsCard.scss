@@ -1,0 +1,46 @@
+.card {
+  width: 100%;
+  max-width: calc(50% - 0.6rem);
+  padding: 1rem 1.8rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 0.6rem 0;
+  margin-right: 0.6rem;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text {
+    word-break: break-all;
+  }
+
+  .button {
+    margin-right: 0.8rem;
+  }
+  .button:last-child {
+    margin-right: 0;
+  }
+
+  &__pending {
+    color: rgb(212, 95, 27);
+  }
+
+  &__date {
+    height: 2.38rem;
+    margin-bottom: 0;
+    color: #7a7a7a;
+  }
+  @media (max-width: 660px) {
+    & {
+      max-width: 100%;
+      margin-right: 0;
+    }
+  }
+}

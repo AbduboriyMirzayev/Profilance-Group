@@ -1,0 +1,28 @@
+.news {
+  &__header {
+    margin-bottom: 1.3rem;
+  }
+
+  &__header-title {
+    margin-bottom: 0;
+  }
+
+  &__input {
+    width: 12.5rem;
+    min-width: 12.5rem;
+    margin-right: 0.8rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__action-wrapper {
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    width: 18.75rem;
+  }
+}

@@ -26,4 +26,13 @@
     background: transparent;
     cursor: pointer;
   }
+
+  @media (max-width: 450px) {
+    &__logo {
+      max-width: 9.3rem;
+    }
+    &__list-item {
+      margin: 0 0.31rem;
+    }
+  }
 }

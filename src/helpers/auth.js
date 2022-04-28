@@ -1,5 +1,5 @@
 import { getUsers } from "mocks";
-import { authError, authInputError } from "utils/errors";
+import { authError } from "utils/errors";
 
 const users = getUsers();
 
@@ -8,13 +8,4 @@ export function checkAuthAndGetUserOrError(login, password) {
     (user) => user.login === login && user.password === password
   );
   return { user, error: user === undefined && authError };
-}
-
-export function getAuthInputRules() {
-  return [
-    {
-      required: true,
-      message: authInputError,
-    },
-  ];
 }
