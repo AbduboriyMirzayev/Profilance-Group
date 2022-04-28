@@ -42,7 +42,7 @@ function News() {
     } else {
       setNews(approvedNews);
     }
-  }, [newsList, user]);
+  }, [newsList, user, approvedNews]);
 
   return (
     <div className="news">
