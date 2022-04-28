@@ -1,7 +1,10 @@
 # Demo User and Admin login and paswords:
 
-Login: admin          Login: user
-Password: 123456      Password: 123456
+Login: admin          
+Password: 123456
+
+Login: user
+Password: 123456
 
 You can test [here.](profilance-group.netlify.app)
 
