@@ -1,3 +1,10 @@
+# Demo User and Admin login and paswords:
+
+Login: admin          Login: user
+Password: 123456      Password: 123456
+
+You can test [here.](profilance-group.netlify.app)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
