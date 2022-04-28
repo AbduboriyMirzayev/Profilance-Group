@@ -3,10 +3,10 @@
 Login: admin          
 Password: 123456
 
-Login: user
+Login: user 
 Password: 123456
 
-You can test [here.](profilance-group.netlify.app)
+You can test [here.](https://profilance-group.netlify.app/news)
 
 # Getting Started with Create React App
 
